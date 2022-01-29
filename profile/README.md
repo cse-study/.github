@@ -1,9 +1,15 @@
-## Hey, this is us <img src="https://user-images.githubusercontent.com/42378118/110234147-e3259600-7f4e-11eb-95be-0c4047144dea.gif" width="30">
+## Hey, this is us 👋
 
-> "뭉치면 살고 흩어지면 죽는다!" 
+안녕하세요, 방문해주셔서 감사합니다. 저희는 이 곳에 블로그를 만들어 CS 관련 스터디를 진행하고 있습니다. 현재는 알고리즘/코테 스터디와, 간단한 AI 스터디를 진행하고 있어요! 
 
-그리하여 결성된 유니스트 CSE 스터디그룹
+- `blog`: 블로그의 전체 컨텐츠를 저장하는 공간입니다. 블로그 UI와 관련된 모든 작업이 이 곳에서 이루어지며, 아래 세 개의 저장소를 submodule로 가집니다.
+- `cse-study.github.io` (`blog/public` submodule): Hugo 블로그 배포를 위한 저장소입니다.
+- `algorithm` (`blog/content/algorithm` submodule): 알고리즘, 코딩테스트 스터디 자료를 저장하는 공간입니다.
+- `weekly-ai` (`blog/content/ai` submodule): AI 관련 소식, 정보를 공유하는 공간입니다.
 
-과연 반 년 이상 꾸준히 진행될 수 있을 것인가?
+스터디 자료의 배포는 아래의 순서로 진행됩니다. 배포 과정을 github action으로 최대한 자동화하여서 유지/보수의 수고를 덜었답니다 🙌 (...아직 적용되지 않았습니다.)
 
-투비 컨티뉴드
+1. `algorithm`, `weekly-ai` 저장소에 마크다운 파일 업로드(push)
+2. `blog` 저장소에 `algorithm`, `weekly-ai`의 변경사항 자동으로 업데이트
+3. `blog` 저장소에 변경사항이 생길 때 마다 배포용 script가 동작하면서, `cse-study.github.io`에 블로그 자동으로 배포
+
